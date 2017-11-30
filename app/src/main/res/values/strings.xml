@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RedditTask</string>
+    <string name="activity_custom_tab_share_website">https://developer.chrome.com/</string>
+    <string name="error_msg">No internet connection</string>
+    <string name="text_hour_ago"> hours ago</string>
+    <string name="text_loading">Loading...</string>
+</resources>

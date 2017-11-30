@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_item">15dp</dimen>
+    <dimen name="padding_item">10dp</dimen>
+    <dimen name="text_size_medium">18sp</dimen>
+    <dimen name="height_dialog">50dp</dimen>
+    <dimen name="padding_smallest">10dp</dimen>
+    <dimen name="padding_big">40dp</dimen>
+    <dimen name="coners">15dp</dimen>
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_item"
+    android:background="@drawable/item_background"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_item">
+
+    <ImageView
+        android:id="@+id/img_news"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/padding_item"
+        tools:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/txt_name_news"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/img_news"
+        android:textSize="18sp"
+        tools:text="Name" />
+
+    <TextView
+        android:id="@+id/txt_author_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/txt_name_news"
+        android:layout_below="@id/txt_name_news"
+        tools:text="Author" />
+
+    <TextView
+        android:id="@+id/txt_subreddit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/txt_name_news"
+        android:layout_below="@id/txt_author_name"
+        tools:text="Subrredit" />
+
+    <TextView
+        android:id="@+id/txt_post_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/txt_name_news"
+        android:layout_below="@id/txt_subreddit"
+        tools:text="Post Date" />
+
+    <TextView
+        android:id="@+id/txt_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/txt_name_news"
+        android:layout_below="@id/txt_post_date"
+        tools:text="Rating" />
+
+    <TextView
+        android:id="@+id/txt_comment_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/txt_name_news"
+        android:layout_below="@id/txt_rating"
+        tools:text="Count comment" />
+</RelativeLayout>
