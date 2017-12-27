@@ -2,28 +2,28 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:gravity="center"
-    android:paddingBottom="@dimen/padding_smallest"
-    android:paddingTop="@dimen/padding_smallest"
-    android:paddingLeft="@dimen/padding_smallest"
-    android:paddingRight="@dimen/padding_big"
     android:layout_gravity="center"
     android:background="@drawable/dialog_background"
-    android:fitsSystemWindows="true">
+    android:fitsSystemWindows="true"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/padding_smallest"
+    android:paddingLeft="@dimen/padding_smallest"
+    android:paddingRight="@dimen/padding_big"
+    android:paddingTop="@dimen/padding_smallest">
 
     <ProgressBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/text_size_medium"
-        android:textColor="@android:color/black"
         android:layout_marginLeft="@dimen/margin_item"
-        android:text="@string/text_loading"/>
+        android:text="@string/text_loading"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_medium" />
 
 
 </LinearLayout>

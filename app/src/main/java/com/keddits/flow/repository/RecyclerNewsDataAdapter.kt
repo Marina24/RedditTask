@@ -1,4 +1,4 @@
-package com.keddits.ui.adapter
+package com.keddits.flow.repository
 
 import android.support.v7.widget.RecyclerView
 import android.text.TextUtils

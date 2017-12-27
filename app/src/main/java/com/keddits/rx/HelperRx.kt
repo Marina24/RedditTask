@@ -1,7 +1,7 @@
 package com.keddits.rx
 
 import com.keddits.model.Child
-import rx.Observable
+import io.reactivex.Observable
 
 /**
  * Created by marinaracu on 21.12.2017.
@@ -10,19 +10,19 @@ class HelperRx {
 
     private lateinit var helperRxCallBack: HelperRxCallBack
 
-    public interface HelperRxCallBack {
+    interface HelperRxCallBack {
         fun loadLastItems(childList: MutableList<Child>)
     }
 
-    public fun getLastItemList(initialList: MutableList<Child>, itemSkip: Int) {
+    fun getLastItemList(initialList: MutableList<Child>, itemSkip: Long) {
         Observable.just(initialList)
                 .flatMapIterable({ list -> list })
                 .skip(itemSkip)
                 .toList()
-                .subscribe({list -> helperRxCallBack.loadLastItems(list)})
+                .subscribe({ list -> helperRxCallBack.loadLastItems(list) })
     }
 
-    public fun setHelperRxCalback(helperRxCallBack: HelperRxCallBack) {
+    fun setHelperRxCalback(helperRxCallBack: HelperRxCallBack) {
         this.helperRxCallBack = helperRxCallBack
     }
 
